@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1 , user-scalable=no">
+    <title>Document</title>
+    <style>
+      *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            height: 100vh;
+        }
+
+ #container{
+   position: relative;
+width: 392px;
+height: 100vh;
+background-color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: end;
+}
+
+svg{
+position: relative;
+margin-bottom: 140px;
+ 
+}
+
+#two{
+    width: 100%;
+height: 648px;
+position: relative;
+margin-bottom: 140px;
+
+}
+
+#color-blue{
+    color: #2d4ba0;
+}
+
+
+
+#b{
+  background-color: white;
+ height: 10px;
+ width: 18px;
+ border-radius: 5px;
+ border: 1px solid #2d4ba0;
+}
+
+#titles{
+    margin-bottom: 25px;
+}
+
+
+#skip  {
+    padding: 10px 20px;
+    background-color: #2d4ba0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    z-index: 2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+     
+}
+
+#next{
+    position: absolute;
+    padding: 10px 20px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    border: none;
+    color: #2d4ba0;
+    background-color: white;
+    border: 0.5px solid #2d4ca056;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.178);
+    border-radius: 10px;
+    
+}
+
+#words{
+    position: absolute;
+    bottom: 65px;
+    text-align: center;
+}
+
+
+@media (max-width:414px) {
+
+   
+    #skip{
+        top: 100px;
+    }
+    #container {
+        height: 95vh;
+    }
+    
+}
+@media (max-width:412px) {
+    #skip{
+        top: 120px;
+    }
+    
+}
+
+@media (max-width:393px) {
+    #skip{
+        top: 50px;
+    }
+    
+}
+
+@media (max-width:390px) {
+    #skip{
+        top: 40px;
+    }
+    
+}
+
+
+
+@media (max-width:375px) {
+    #skip{
+        top: 20px;
+    }
+    
+}
+
+
+
+
+@media (max-width:320px) {
+    #skip{
+        top: 2px;
+        right: 20px;
+    }
+    
+}
+
+
+    </style>
+</head>
+<body>
+   
+    <section id="container">
+      
+        <button  id="skip">  <a href="five.html" style="color: white; text-decoration: none;"> Skip</a>  </button>
+        <h5 id="words">Easily  Track your <span id="color-blue">nutrition </span> and <br> <span id="color-blue">fitness</span> level</h5>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button"  id="b" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" id="b" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" id="b" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+               <img id="two" src="Pasted Graphic 2.png" alt="">
+                    
+                <div class="carousel-caption d-none d-md-block  text-dark" id="titles">
+
+                  <h5>Easily  Track your <span id="color-blue">nutrition </span> and  <span id="color-blue">fitness</span> level</h5>
+               
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img id="two" src="Pasted Graphic.png" alt="">
+                    
+                <div class="carousel-caption d-none d-md-block text-dark " id="titles">
+                    <h5>Easily  Track your <span id="color-blue">nutrition </span> and  <span id="color-blue">fitness</span> level</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img id="two" src="Pasted Graphic 1.png" alt="">
+                    
+                <div class="carousel-caption d-none d-md-block text-dark" id="titles">
+                    <h5>Easily  Track your <span id="color-blue">nutrition </span> and  <span id="color-blue">fitness</span> level</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+          <!-- <button  id="next">   Next </button> -->
+
+  </section>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
